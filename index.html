@@ -1,0 +1,599 @@
+
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K-Insight</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,500,600,700,900' rel='stylesheet'>
+  
+
+  
+</head>
+<body>
+<form>
+  
+  <div class="main-container">
+    <div class="r-spinner"></div>
+    <div class="main-container__inner">
+      
+
+
+
+<nav class="css-header navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <a class="navbar-brand" href="index.html">
+    <img src="http://satyr.io/200x34/" alt="logo">
+  </a>
+
+  <div class="navbar-user">Welcome, <span>Oliver</span></div>
+
+  <ul class="navbar-nav mr-auto">
+    
+      <li class="nav-item ">
+        <a class="nav-link" href="#">
+          
+  <svg class="icon icon-navigation icon-dashboard">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#activity" />
+  </svg>
+
+          Activity
+          <span class="badge badge-pill badge-custom-color">3</span>
+        </a>
+      </li>
+    
+      <li class="nav-item ">
+        <a class="nav-link" href="#">
+          
+  <svg class="icon icon-navigation icon-dashboard">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#newspaper" />
+  </svg>
+
+          Drafts
+          
+        </a>
+      </li>
+    
+      <li class="nav-item ">
+        <a class="nav-link" href="#">
+          
+  <svg class="icon icon-navigation icon-dashboard">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#cart" />
+  </svg>
+
+          Shopping cart
+          
+        </a>
+      </li>
+    
+      <li class="nav-item ">
+        <a class="nav-link" href="#">
+          
+  <svg class="icon icon-navigation icon-dashboard">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#sign-out" />
+  </svg>
+
+          Log Out
+          
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+      <main class="css-main js-main js-collapse isOpen">
+        <script>
+          var main = document.querySelector('.js-main');
+          var isOpen = localStorage.getItem('isSidebarCollapsed');
+          localStorage.getItem('isSidebarCollapsed') && main.classList.remove('isOpen');
+        </script>
+
+        
+
+
+
+<div class="css-sidebar js-sidebar">
+  <div class="css-sidebar__header">
+    <div></div>
+    <div class="js-toggle cursor--pointer js-storage" data-storage-active="false" data-storage-change="true" data-storage-key="isSidebarCollapsed" data-storage-value="true">
+      
+  <svg class="icon icon-hamburger">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#hamburger" />
+  </svg>
+
+    </div>
+  </div>
+
+  <ul class="css-sidebar__nav list-unstyled">
+
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="dashboard.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#dashboard" />
+  </svg>
+
+          <span>K-Center</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="products.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#products" />
+  </svg>
+
+          <span>Products</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="orders.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#orders" />
+  </svg>
+
+          <span>Recent orders</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="mailing-list.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#mailing-list" />
+  </svg>
+
+          <span>K-List</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item  active ">
+        <div class="orange-bar"></div>
+        <a href="insights.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#insights" />
+  </svg>
+
+          <span>K-Insight</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="sourcing.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#sourcing" />
+  </svg>
+
+          <span>K-Source</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="proofing.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#proofing" />
+  </svg>
+
+          <span>K-Proof</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="dam.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#dam" />
+  </svg>
+
+          <span>K-DAM</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="settings.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#settings" />
+  </svg>
+
+          <span>Settings</span>
+        </a>
+      </li>
+    
+      <li class="css-sidebar__nav-item ">
+        <div class="orange-bar"></div>
+        <a href="help.html" class="css-sidebar__nav-link">
+          
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#help" />
+  </svg>
+
+          <span>Help</span>
+        </a>
+      </li>
+    
+
+  </ul>
+</div>
+
+        
+
+<div class="sidebar-logo">
+  
+  <svg class="icon icon-sidebar-logo">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#kadena-xs" />
+  </svg>
+
+  
+  <svg class="icon icon-sidebar-logo-small">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#logo-small" />
+  </svg>
+
+</div>
+
+
+        <div class="content">
+          <div class="content__inner">
+            <div class="content-header">
+              <div class="content-header__inner">
+                <h1 class="content-header__page-name">K-Insight
+                  
+                </h1>
+                <div class="btn-group btn-group--right">
+                
+
+                  
+
+                  
+                    <a href="http://spotfire.kadenadev.com/spotfire/wp/render/GkeTDq95c3VQZnVdbt/analysis?file=/Kadena/Reports&waid=pnXixVnNIkyjZisXeUIEQ-160631f9caLjm5&wavid=0" class="btn-action">See Detailed Data</a>
+                  
+
+                  
+
+                
+                </div>
+              </div>
+              <div class="breadcrumbs">
+  <a href="#">Home</a>
+  
+    <a href="#">K-Insight</a>
+  
+</div>
+
+            </div>
+            <div class="content-block">
+              
+  <script async src="./js/spotfire.js"></script>
+
+  <div class="spotfire">
+    
+      
+        
+        
+        
+        
+      
+    
+
+    <div class="row">
+      
+      
+      <div class="col-lg-6">
+        <div id="spotfire-1" data-url="/Kadena/Single Graphs/Acme Spend Overview by Quarter - Business Unit" class="spotfire__item js-spotfire">
+          <div class="spinner">
+            
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#spinner" />
+  </svg>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div id="spotfire-2" data-url="/Kadena/Single Graphs/YTD Acme Spend Overview by Business Unit" class="spotfire__item js-spotfire">
+          <div class="spinner">
+            
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#spinner" />
+  </svg>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div id="spotfire-3" data-url="/Kadena/Single Graphs/Inventory_Report_Product Inventory By Client" class="spotfire__item js-spotfire">
+          <div class="spinner">
+            
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#spinner" />
+  </svg>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div id="spotfire-4" data-url="/Kadena/Single Graphs/OrderTrends – Order_by_Source" class="spotfire__item js-spotfire">
+          <div class="spinner">
+            
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#spinner" />
+  </svg>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div id="spotfire-5" data-url="/Kadena/Single Graphs/OrderTrend-OrderTrendByType" class="spotfire__item js-spotfire">
+          <div class="spinner">
+            
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#spinner" />
+  </svg>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div id="spotfire-6" data-url="/Kadena/Single Graphs/DIRECTMAILCDH-ReceivedMailPerformance" class="spotfire__item js-spotfire">
+          <div class="spinner">
+            
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#spinner" />
+  </svg>
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+            </div>
+          </div>
+        </div>
+
+      </main>
+     <div class="footer">
+  <p>
+    <span>© Nortek Global HVAC LLC, 2016 All Rights Reserved 8000 Phoenix Parkway, O’Fallon, MO 63368. </span>
+    <a href="#">Terms and Conditions</a>
+  </p>
+</div>
+
+
+    </div>
+  </div>
+
+  
+
+<div class="js-notification" data-notification-max="3" data-time-for-animation="250" data-time-to-remove="5000">
+  <div class="snack-notification snack-notification--info" data-notification-type="info">
+    <span class="snack-notification__text">Some text</span>
+    <button type="button" class="snack-notification__btn js-notification-closer">
+      
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#cross--thin--white" />
+  </svg>
+
+      <span>Got it</span>
+    </button>
+  </div>
+
+  <div class="snack-notification snack-notification--warning" data-notification-type="warning">
+    <span class="snack-notification__text">Some text</span>
+    <button type="button" class="snack-notification__btn js-notification-closer">
+      
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#cross--thin" />
+  </svg>
+
+      <span>Got it</span>
+    </button>
+  </div>
+
+  <div class="snack-notification snack-notification--error" data-notification-type="error">
+    <span class="snack-notification__text">Some text</span>
+    <button type="button" class="snack-notification__btn js-notification-closer">
+      
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#cross--thin--white" />
+  </svg>
+
+      <span>Got it</span>
+    </button>
+  </div>
+
+  <div class="snack-notification snack-notification--success" data-notification-type="success">
+    <span class="snack-notification__text">Some text</span>
+    <button type="button" class="snack-notification__btn js-notification-closer">
+      
+  <svg class="icon ">
+    <use xlink:href="/gfx/svg/sprites/icons.svg#cross--thin--white" />
+  </svg>
+
+      <span>Got it</span>
+    </button>
+  </div>
+</div>
+
+
+<script>
+  'use strict';
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  var Notification = function () {
+    function Notification(container) {
+      _classCallCheck(this, Notification);
+
+      this.container = container;
+      this.timeForAnimation = +container.dataset.timeForAnimation;
+      this.timeToRemove = +container.dataset.timeToRemove;
+
+      var MAX_SIZE = 3;
+      this.notification = {};
+      for (var i = 1; i <= MAX_SIZE; i += 1) {
+        this.notification[i] = undefined;
+      }
+    }
+
+    Notification.prototype.addNotification = function addNotification(type) {
+      var _this = this;
+      hideLastElement();
+      changeRestElements();
+      showNewNotification(type);
+
+      function hideLastElement() {
+        var lastNumber = Object.keys(_this.notification).length;
+        var element = _this.notification[lastNumber];
+        if (element) {
+          element.classList.add('hide');
+          _this.notification[lastNumber] = undefined;
+          setTimeout(function () {
+            element.remove();
+          }, _this.timeForAnimation);
+        }
+      }
+
+      function changeRestElements() {
+        var elementNumbers = Object.keys(_this.notification).length;
+        for (var index = elementNumbers; index > 0; index -= 1) {
+          if (index !== elementNumbers) {
+            var element = _this.notification[index];
+            if (element) {
+              element.classList.remove('show-' + index);
+              var newIndex = index + 1;
+              element.classList.add('show-' + newIndex);
+              _this.notification[newIndex] = element;
+            }
+          }
+        }
+      }
+
+      function showNewNotification(type) {
+        var newElement = createNewNotification(type);
+        _this.notification[1] = newElement;
+        _this.container.appendChild(newElement);
+        window.getComputedStyle(newElement).opacity;
+        newElement.classList.add('show-1');
+
+        setTimeout(function () {
+          newElement.classList.add('hide');
+        }, _this.timeToRemove);
+
+        setTimeout(function () {
+          newElement.remove();
+        }, _this.timeForAnimation + _this.timeToRemove);
+      }
+
+      function createNewNotification(type) {
+        var idealElement = _this.container.querySelector('[data-notification-type="' + type + '"]');
+        var newElement = idealElement.cloneNode(true);
+        var closer = newElement.querySelector('.js-notification-closer');
+
+        closer.addEventListener('click', function (event) {
+          var notification = event.currentTarget.parentNode;
+          notification.classList.add('hide');
+
+          pullDownNotificationsAbove(notification);
+
+          setTimeout(function () {
+            notification.remove();
+          }, _this.timeForAnimation);
+        });
+
+        return newElement;
+      }
+
+      function pullDownNotificationsAbove(notification) {
+        var keys = Object.keys(_this.notification);
+        var values = Object.values(_this.notification);
+        var value = values.indexOf(notification);
+        var key = keys[value];
+        _this.notification[key] = undefined;
+
+        Object.keys(_this.notification).forEach(function (index) {
+          if (index > key && _this.notification[index]) {
+            var element = _this.notification[index];
+            var newIndex = index - 1;
+            element.classList.remove('show-' + index);
+            element.classList.add('show-' + newIndex);
+            _this.notification[newIndex] = element;
+            _this.notification[index] = undefined;
+          }
+        });
+      }
+    };
+
+    return Notification;
+  }();
+
+  var notification = new Notification(document.querySelector('.js-notification'));
+</script>
+
+
+</form>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+  var config = {
+    localization: {
+      login: {
+        email: 'E-MAIL',
+        emailPlaceholder: 'your@email.com',
+        emailValidationMessage: 'Please check your email format.',
+        password: 'PASSWORD',
+        passwordPlaceholder: 'password',
+        passwordShow: 'SHOW',
+        passwordHide: 'HIDE',
+        passwordValidationMessage: 'Please enter password.',
+        keepMeLoggedIn: 'Keep me logged in',
+        login: 'Log in'
+      },
+      checkout: {
+        initUIURL: '',
+        changeAddressURL: '',
+        changeDeliveryMethodURL: '',
+        changeQuantityURL: '',
+        removeProductURL: '',
+        submitURL: ''
+      },
+      spotfire: {
+        serverUrl: 'http://spotfire.kadenadev.com/spotfire/wp/'
+      }
+    }
+  };
+</script>
+
+
+  <script src="js/common.js"></script>
+  <script src="js/app.js" async></script>
+
+</body>
+</html>
